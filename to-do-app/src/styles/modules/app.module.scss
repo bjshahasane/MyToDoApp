@@ -1,0 +1,82 @@
+.headerdiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	// width: 50%;
+	margin: 30px;
+	padding: 10px;
+	background-color: rgb(66, 65, 65);
+}
+
+.addButton {
+	background-color: orange;
+	color: white;
+	font-size: 14px;
+	width: 10%;
+	height: auto;
+	padding: 10px;
+	text-align: center;
+	margin: auto;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.inputText {
+	width: 100%;
+	height: 100%;
+	margin: 10px;
+	font-size: 20px;
+}
+.title{
+	color: white;
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.appContent{
+	display: flex;
+	// align-items: left;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 30px;
+	padding: 10px;
+	font-size: 20px;
+	background-color: rgb(66, 65, 65);
+}
+
+.contentItem{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px;
+	color: orange;
+	padding: 10px;
+	background-color: rgb(80, 80, 80);
+}
+.titleDiv{
+	display: flex;
+	align-items: flex-start;
+	justify-content:space-between;
+}
+.icondiv{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.icons{
+	font-size: 2rem;
+	padding: 0.5rem;
+	border-radius: 4px;
+	background-color: var(--gray-1);
+	color: var(--black-2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+	cursor: pointer;
+	transition: 0.3s ease background-color;
+	&:hover {
+		background-color: var(--gray-2);
+	}
+}
