@@ -1,15 +1,14 @@
-import React , { useEffect, useState } from 'react';
+import React , { useState } from 'react';
 import styles from '../styles/modules/app.module.scss';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
-import { addTodo, updateTodo } from '../slices/todoSlice';
+import { addTodo } from '../slices/todoSlice';
 import { v4 as uuid } from 'uuid';
 
 
 const AppHeader =()=>{
     const dispatch = useDispatch();
     const [title, setTitle] = useState('');
-
 
     const handleChange =(e)=>{
         setTitle(e.target.value);
@@ -22,10 +21,12 @@ const AppHeader =()=>{
                   id: uuid(),
                   title,
                   time: new Date().toLocaleString(),
+                  status:'incomplete'
                 })
               );
               toast.success('Task added successfully');
         }
+        setTitle('')
     }
     return(
         <div className={styles.headerdiv}>
